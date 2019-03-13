@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:each="user : ${userinfo}">
+    <h4>亲爱的<span th:text="${user.name}"></span>，你好！</h4>
+    <h4>您的登陆密码是:<span th:text="${user.password}"></span></h4>
+    </div>
+</body>
+</html>
